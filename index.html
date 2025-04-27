@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجع الغولف</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 10px; /* تحريك الصورة للأسفل قليلاً */
+            right: 20px; /* تثبيت الصورة في أعلى يمين الصفحة */
+            width: 100px;
+            height: auto;
+        }
+        nav {
+            background-color: #1b5e20;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .hidden {
+            display: none;
+        }
+        /* .image-container {
+            display: flex;
+            justify-content: space-between;  توزيع الصور بالتساوي 
+            gap: 5px; /* مسافة صغيرة بين الصور 
+            flex-wrap: wrap;
+            padding: 40px 20px;
+            transform: translateY(-80px);  رفع الصور للأعلى بمقدار 10px 
+
+        }
+
+        .image-container img {
+            width: calc(25% - 10px); تعديل عرض الصور لتتناسب مع المساحة 
+            height: auto;
+            max-width: 100%; /* ضمان أن الصور لا تتجاوز عرض الحاوية 
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin: 0; /* إزالة أي هامش بين الصور 
+
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05); /* تأثير تكبير الصورة عند التمرير 
+        } */
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            flex-wrap: wrap;
+            padding: 20px 10px;
+            transform: translateY(-40px);
+        }
+        .image-container img {
+            width: calc(25% - 10px);
+            height: auto;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin: 0;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease; /* إضافة تأثير انتقال لتغيير اللون */
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* اللون الذي يظهر عند التمرير فوق الرابط */
+        }
+
+        h1, h2 {
+            margin: 0; /* إزالة المسافة بين العناوين */
+            padding: 0; /* إزالة الحشوة الداخلية */
+        }
+       
+        /* شريط أدوات إمكانية الوصول */
+        .accessibility-toolbar {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 8px;
+            z-index: 1000;
+        }
+        .accessibility-toolbar button {
+            background: white;
+            color: black;
+            border: none;
+            padding: 8px 12px;
+            margin: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .accessibility-toolbar button:hover {
+            background: #ddd;
+        }
+
+        /* وضع التباين العالي */
+        .high-contrast {
+            background-color: black !important;
+            color: yellow !important;
+        }
+
+        /* تعطيل الرسوم */
+        .disable-animations * {
+            animation: none !important;
+            transition: none !important;
+        }
+        div[style="text-align: left;"] {
+    margin-top: -20px; /* رفع العنصر للأعلى بمقدار 20px */
+}
+    </style>
+</head>
+<body>
+    <!-- شريط أدوات إمكانية الوصول -->
+    <div class="accessibility-toolbar">
+        <button onclick="increaseFontSize()">تكبير حجم الخط</button>
+        <button onclick="decreaseFontSize()">تصغير حجم الخط</button>
+        <button onclick="toggleContrast()">وضع التباين العالي</button>
+        
+    </div>
+
+    <header>
+        <h1>مرحبًا بكم في منتجع الغولف</h1><br>
+        <h2>Hole in one</h2>
+        <img src="Hole in win.jpg" alt="شعار المنتجع" class="logo">
+    </header>
+    <nav>
+        <a href="about us.html"> نبذة عنا</a>
+        <a href="المرافق.html">مرافقنا</a>
+        <a href="الاتصال .html">اتصل بنا</a>
+        <a href="العروض.html"> عروضنا</a>
+    </nav>
+    <div class="container">
+        <h2>تجربة فريدة في أرقى ملاعب الغولف</h2>
+        <p>استمتع بجمال الطبيعة والخدمات الفاخرة في منتجع الغولف.</p>
+        <div id="extraInfo" class="hidden">
+            <p>نقدم لكم أفضل تجربة غولف مع ملاعب عالمية وخدمات راقية.</p>
+        </div>
+    </div> <div style="text-align: left;">
+        <H4>▶ My accaonts :</H4>
+        <a href="https://www.instagram.com/hole_in_one0/?utm_source=ig_web_button_share_sheet">
+            <img src="insta.png" alt="وصف الصورة" width="50" height="30">
+        </a>
+        <a href="https://www.facebook.com/share/18LDV3VxU5/">
+            <img src="facebook.png" alt="وصف الصورة"  width="50" height="30">
+        </a>
+        <a href="https://x.com/eHole_In_One?t=MlgPPlHxw-btlkumNJ2rAg&s=09 ">
+            <img src="X.png" alt="وصف الصورة" width="50" height="30">
+            <br>   <br></a>
+    <div class="image-container">
+        <img src="Best golf resorts for general excellence_ GOLF's Top 100 Resorts 2019.jpg" alt="ملعب غولف واسع مع منظر طبيعي خلاب وأشجار على الجانبين">
+        <img src="download.jpg" alt= "تعرض الصورة الملعب ولاعب يقوم باللعب ">
+        <img src="Lajitas Golf Resort Adopts Agilysys Solutions, Upgrading Service and Expanding Revenue Opportunities.jpg" alt="الصورة تعرض طبيعة المنتجع بشكل اوسع وتظهر فخامة خضاره ">
+        <img src="Premium Photo _ Golf club and ball in grass with sunlight_ Close up at golf club and golf ball_.jpg" alt="صورة مضرب غولف وامامه كرة الغولف">
+    </div>
+   
+
+    <footer>
+        &copy; 2025 جميع الحقوق محفوظة لمنتجع الغولف
+    </footer>
+    <script>
+        function increaseFontSize() {
+            document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) + 2) + "px";
+        }
+    
+        function decreaseFontSize() {
+            document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) - 2) + "px";
+        }
+    
+        function toggleContrast() {
+            document.body.classList.toggle("high-contrast");
+        }
+    
+    </script>
+</body>
+</html>

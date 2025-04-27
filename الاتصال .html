@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معلومات الاتصال</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #2e7d32;
+        }
+        p {
+            font-size: 16px;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info div {
+            margin: 10px 0;
+            padding: 10px;
+            background: #e8f5e9;
+            border-radius: 5px;
+        }
+        .contact-info div span {
+            font-weight: bold;
+            color: #1b5e20;
+        }
+        button {
+            background-color:  #1b5e20;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color:#96e035;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -300px; /* رفع الصور للأعلى */
+            padding: 20px;
+        }
+        .image-container img:first-child {
+            width: 250px; /* تكبير الصورة الأولى */
+            max-width: 300px;
+        }
+        .image-container img {
+            width: 200px;
+            max-width: 250px;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        function goHome() {
+            window.location.href = "home page.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>معلومات الاتصال</h2>
+        <p>يمكنك التواصل معنا عبر الوسائل التالية:</p>
+        <div class="contact-info">
+            <div><span>الهاتف:</span> +966 123 456 789</div>
+            <div><span>البريد الإلكتروني:</span> holeinone@golfresort.com</div>
+            <div><span>العنوان:</span> كاشكايش، شارع الجمهورية، البرتغال</div>
+            <div><span>ساعات العمل:</span> يومياً من 8 صباحًا حتى 10 مساءً</div>
+        </div>
+        <button onclick="goHome()">العودة إلى الصفحة الرئيسية</button>
+    </div>
+    <div class="image-container">
+        <img src="691a4ef1d3c3f30174146dfb4f2f7f57.jpg" alt="منتجع الجولف">
+        <img src="🧚_♀️.jpg" alt="منتجع الجولف">
+    </div>
+</body>
+</html>

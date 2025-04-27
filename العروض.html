@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عروض منتجع الغولف</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #1b5e20;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            padding: 30px 15px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 28px;
+            color: #2e7d32;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .offers {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .offer-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .offer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .offer-card h3 {
+            font-size: 24px;
+            color: #2e7d32;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .offer-card p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .offer-card ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+            color: #777;
+        }
+        .offer-card ul li {
+            margin-bottom: 8px;
+        }
+        .offer-card .btn {
+            background-color: #2e7d32;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .offer-card .btn:hover {
+            background-color: #1b5e20;
+        }
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 12px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+        }
+        nav {
+            background-color: #1b5e20;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* شريط أدوات إمكانية الوصول */
+        .accessibility-toolbar {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px;
+            border-radius: 8px;
+            z-index: 1000;
+            display: flex;
+            gap: 15px;
+        }
+        .accessibility-toolbar button {
+            background: white;
+            color: black;
+            border: none;
+            padding: 10px 15px; /* زيادة عرض الأزرار */
+            font-size: 16px; /* زيادة حجم الخط */
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .accessibility-toolbar button:hover {
+            background: #ddd;
+        }
+
+        /* وضع التباين العالي */
+        .high-contrast {
+            background-color: black !important;
+            color: yellow !important;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>عروض منتجع الغولف المخصصة</h1>
+        <img src="Hole in win.jpg" alt="شعار المنتجع" class="logo">
+    </header>
+    <nav>
+        <a href="home page.html">الصفحة الرئيسية</a>
+        <a href="المرافق.html">مرافقنا</a>
+        <a href="الاتصال .html">اتصل بنا</a>
+        <a href="about us.html">نبذة عنا</a>
+    </nav>
+    <div class="container">
+        <h2>!استمتع بالعروض المميزة لدينا</h2>
+
+        <div class="offers">
+            <!-- عرض خمسة جوالات -->
+            <div class="offer-card">
+                <h3>خمس جوالات</h3>
+                <ul>
+                    <li>إقامة كاملة لمدة خمس ليال في جناح فاخر</li>
+                    <li>خمس جوالات - 18 حفرة</li>
+                    <li>جولة واحدة مضمونة في ملعب "سي فيو" الشهير</li>
+                    <li>جلسة تدريب رقمية مجانية</li>
+                </ul>
+                <a href="اطلب الان .html" class="btn">اطلب الآن</a>
+            </div>
+
+            <!-- عرض الجولة الثالثة (Triple Tee) -->
+            <div class="offer-card">
+                <h3>الجولة الثلاثية (Triple Tee)</h3>
+                <ul>
+                    <li>إقامة لمدة ليلتين في غرفة مزدوجة مع وجبة إفطار</li>
+                    <li>ثلاث جوالات - 18 حفرة تشمل جولة في ملعب "سي فيو" الشهير (إن وجدت)</li>
+                    <li>تأجير مجاني للعربات</li>
+                    <li>خصم 20% لمتجر المحترفين</li>
+                </ul>
+                <a href="اطلب الان .html" class="btn">اطلب الآن</a>
+            </div>
+
+            <!-- عرض استراحة الاستجمام -->
+            <div class="offer-card">
+                <h3>استراحة استجمام</h3>
+                <ul>
+                    <li>إقامة لليلة واحدة مع وجبة إفطار كاملة</li>
+                    <li>تناول العشاء في أي من مطاعم المنتجع</li>
+                    <li>الوصول إلى الملاعب (تطبق الرسوم ويستبعد ملعب "سي فيو")</li>
+                    <li>تأجير نادي مجاني</li>
+                </ul>
+                <a href="اطلب الان .html" class="btn">اطلب الآن</a>
+            </div>
+        </div>
+        <p>تتوفر الحزم المخصصة للفعاليات المؤسسية والإقامات الطويلة. يجب على العملاء الاتصال بالشركة لترتيب أي حزم مخصصة.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 جميع الحقوق محفوظة لمنتجع الغولف</p>
+    </footer>
+
+    <!-- شريط أدوات إمكانية الوصول -->
+    <div class="accessibility-toolbar">
+        <button onclick="increaseFontSize()">تكبير الخط</button>
+        <button onclick="decreaseFontSize()">تصغير الخط</button>
+        <button onclick="toggleContrast()">التباين</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المرافق المقدمة في منتجع الغولف</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #1b5e20;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            padding: 30px 15px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #2e7d32;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .facilities {
+            flex: 2;
+        }
+        .facility-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: right;
+        }
+        .facility-list li {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .facility-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .image-container {
+            flex: 1;
+            text-align: right;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 12px 0;
+            font-size: 14px;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+        }
+        nav {
+            background-color: #1b5e20;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* شريط أدوات إمكانية الوصول */
+        .accessibility-toolbar {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px;
+            border-radius: 8px;
+            z-index: 1000;
+            display: flex;
+            gap: 15px;
+        }
+        .accessibility-toolbar button {
+            background: white;
+            color: black;
+            border: none;
+            padding: 10px 15px; /* زيادة عرض الأزرار */
+            font-size: 16px; /* زيادة حجم الخط */
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .accessibility-toolbar button:hover {
+            background: #ddd;
+        }
+
+        /* وضع التباين العالي */
+        .high-contrast {
+            background-color: black !important;
+            color: yellow !important;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>المرافق المقدمة في منتجع الغولف</h1>
+        <img src="Hole in win.jpg" alt="شعار المنتجع" class="logo">
+    </header>
+    <nav>
+        <a href="home page.html">الصفحة الرئيسية</a>
+        <a href="العروض.html">عروضنا</a>
+        <a href="الاتصال .html">اتصل بنا</a>
+        <a href="about us.html">نبذة عنا</a>
+    </nav>
+    <h2>استمتع بتجربة فريدة في منتجع الغولف</h2>
+    
+    <div class="container">
+        <!-- قائمة المرافق على اليسار -->
+        <div class="facilities">
+            <ul class="facility-list">
+                <li>ثلاثة ملاعب لبطولات الجولف بما في ذلك ملعب "سي فيو" الشهير</li>
+                <li>ناديان متميزان</li>
+                <li>الإقامة في الفنادق الفاخرة</li>
+                <li>المطاعم والمقاهي المتنوعة</li>
+                <li>متجر للمحترفين</li>
+                <li>:أنشطة أخرى 
+                    <ul>
+                        <li>ساحة تدريب مضاءة بأنوار الكشافات</li>
+                        <li>دروس جولف مخصصة للمبتدئين والمحترفين</li>
+                        <li>التدريب الرقمي المتطور</li>
+                        <li>خدمة المساعدة على حمل أدوات الجولف</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- الصورة على اليمين -->
+        <div class="image-container">
+            <img src="المرافق 2.jpg" alt=" مرافق منتجع الجولف"><br>
+            <img src="المرافق 3.jpeg" alt=" مرافق منتجع الجولف"><br>
+            <img src="المرافق.jpg" alt=" مرافق منتجع الجولف">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 جميع الحقوق محفوظة لمنتجع الغولف | <a href="#">موقعنا الإلكتروني</a></p>
+    </footer>
+
+    <!-- شريط أدوات إمكانية الوصول -->
+    <div class="accessibility-toolbar">
+        <button onclick="increaseFontSize()">تكبير الخط</button>
+        <button onclick="decreaseFontSize()">تصغير الخط</button>
+        <button onclick="toggleContrast()">التباين</button>
+    </div>
+
+    <script>
+        function increaseFontSize() {
+            let body = document.body;
+            let currentSize = parseFloat(window.getComputedStyle(body).fontSize);
+            body.style.fontSize = (currentSize + 2) + "px";
+        }
+
+        function decreaseFontSize() {
+            let body = document.body;
+            let currentSize = parseFloat(window.getComputedStyle(body).fontSize);
+            body.style.fontSize = (currentSize - 2) + "px";
+        }
+
+        function toggleContrast() {
+            document.body.classList.toggle("high-contrast");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نبذة عن منتجع الغولف</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            direction: rtl; /* اتجاه النص من اليمين لليسار */
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+            border-bottom: 5px solid #1b5e20;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+        }
+        nav {
+            background-color: #1b5e20;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            padding: 40px 20px;
+            text-align: right;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .container h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2e7d32;
+        }
+        .container p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .container ul {
+            list-style: none;
+            padding: 0;
+        }
+        .container ul li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+        .image-container img {
+            width: 32%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+        h1, h2 {
+            margin: 0; /* إزالة المسافة بين العناوين */
+            padding: 0; /* إزالة الحشوة الداخلية */
+        }
+
+        /* شريط أدوات إمكانية الوصول */
+        .accessibility-toolbar {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 8px;
+            z-index: 1000;
+        }
+        .accessibility-toolbar button {
+            background: white;
+            color: black;
+            border: none;
+            padding: 8px 12px;
+            margin: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .accessibility-toolbar button:hover {
+            background: #ddd;
+        }
+
+        /* وضع التباين العالي */
+        .high-contrast {
+            background-color: black !important;
+            color: yellow !important;
+        }
+
+        /* تعطيل الرسوم */
+        .disable-animations * {
+            animation: none !important;
+            transition: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط أدوات إمكانية الوصول -->
+    <div class="accessibility-toolbar">
+        <button onclick="increaseFontSize()">تكبير حجم الخط</button>
+        <button onclick="decreaseFontSize()">تصغير حجم الخط</button>
+        <button onclick="toggleContrast()">وضع التباين العالي</button>
+       
+    </div>
+
+    <header>
+        <h1>نبذة عن منتجع الغولف</h1><br>
+        <h2>وجهتك المثالية لعشاق الغولف</h2>
+        <img src="Hole in win.jpg" alt="شعار المنتجع" class="logo">
+    </header>
+
+    <nav>
+        <a href="home page.html">الصفحة الرئيسية</a>
+        <a href="المرافق.html">مرافقنا</a>
+        <a href="الاتصال .html">اتصل بنا</a>
+        <a href="العروض.html"> عروضنا</a>
+    </nav>
+
+    <div class="container" id="about">
+        <h2>من نحن</h2>
+        <p>منتجع الغولف هو وجهة فاخرة مصممة لتلبية احتياجات كل محب للغولف. نحن نقدم تجربة استثنائية تمتزج فيها الأجواء الطبيعية الجميلة مع المرافق الفاخرة التي توفر الراحة والترفيه.</p>
+        <p>سواء كنت لاعب جولف محترف أو مبتدئ، يقدم منتجعنا بيئة مثالية لممارسة هذه الرياضة المميزة. بالإضافة إلى ملعب الغولف ذو المواصفات العالمية، نقدم العديد من الأنشطة الترفيهية لضمان تجربة متكاملة.</p>
+    </div>
+
+    <div class="container" id="services">
+        <h2>خدماتنا</h2>
+        <ul>
+            <li>ملعب جولف عالمي المستوى مصمم خصيصًا لتلبية احتياجات جميع اللاعبين.</li>
+            <li>إقامة فاخرة في غرف وفيلات تطل على المناظر الطبيعية الخلابة.</li>
+            <li>مرافق اجتماعات وفعاليات خاصة للمجموعات والشركات.</li>
+            <li>أنشطة رياضية متنوعة مثل السباحة، ركوب الدراجات، والمشي في الطبيعة.</li>
+            <li>مطاعم راقية تقدم مجموعة من الأطعمة العالمية والمحلية.</li>
+        </ul>
+    </div>
+
+    <div class="image-container">
+        <img src="about us photo 1.jpg" alt="ملعب جولف">
+        <img src="about us 2.jpg" alt="إقامة في المنتجع">
+        <img src="about us 3.jpg" alt="مرافق المنتجع">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 جميع الحقوق محفوظة لمنتجع الغولف</p>
+    </footer>
+
+    <script>
+        function increaseFontSize() {
+            document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) + 2) + "px";
+        }
+
+        function decreaseFontSize() {
+            document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) - 2) + "px";
+        }
+
+        function toggleContrast() {
+            document.body.classList.toggle("high-contrast");
+        }
+      
+    </script>
+</body>
+</html>

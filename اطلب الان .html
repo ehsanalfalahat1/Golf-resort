@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اطلب الآن</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #2e7d32;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #1b5e20;
+        }
+        .home-button {
+            background-color: #ff9800; /* لون مميز */
+            margin-top: 20px;
+        }
+        .home-button:hover {
+            background-color: #e68900;
+        }
+
+        /* شريط أدوات إمكانية الوصول */
+        .accessibility-toolbar {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px;
+            border-radius: 8px;
+            z-index: 1000;
+            display: flex;
+            gap: 15px; /* زيادة المسافة بين الأزرار */
+        }
+        .accessibility-toolbar button {
+            background: white;
+            color: black;
+            border: none;
+            padding: 4px 20px; /* زيادة عرض الأزرار */
+            font-size: 16px; /* زيادة حجم الخط */
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .accessibility-toolbar button:hover {
+            background: #ddd;
+        }
+
+        /* وضع التباين العالي */
+        .high-contrast {
+            background-color: black !important;
+            color: yellow !important;
+        }
+
+    
+    </style>
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            var name = document.getElementById("name").value.trim();
+            var email = document.getElementById("email").value.trim();
+            var phone = document.getElementById("phone").value.trim();
+            var offer = document.getElementById("offer").value;
+
+            if (name === "" || email === "" || phone === "" || offer === "") {
+                alert("يرجى ملء جميع الحقول المطلوبة.");
+                return;
+            }
+
+            alert("تم إرسال طلبك بنجاح!");
+            document.getElementById("orderForm").reset();
+        }
+
+        function goHome() {
+            window.location.href = "home page.html"; // تأكد أن ملف الصفحة الرئيسية موجود بنفس المسار
+        }
+
+        function increaseFontSize() {
+            document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) + 2) + "px";
+        }
+
+        function decreaseFontSize() {
+            document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) - 2) + "px";
+        }
+
+        function toggleContrast() {
+            document.body.classList.toggle("high-contrast");
+        }
+
+       
+        
+    </script>
+</head>
+<body>
+    <!-- شريط أدوات إمكانية الوصول -->
+    <div class="accessibility-toolbar">
+        <button onclick="increaseFontSize()">تكبير الخط</button>
+        <button onclick="decreaseFontSize()">تصغير الخط</button>
+        <button onclick="toggleContrast()">التباين</button>
+     
+    </div>
+
+    <div class="container">
+        <h2>اطلب الآن</h2>
+        <form id="orderForm" onsubmit="validateForm(event)">
+            <label for="name">الاسم الكامل</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">رقم الهاتف</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="offer">اختر العرض</label>
+            <select id="offer" name="offer" required>
+                <option value="">-- اختر العرض --</option>
+                <option value="5-rounds">خمس جولات</option>
+                <option value="triple-tee">الجولة الثلاثية</option>
+                <option value="relax-package">استراحة استجمام</option>
+            </select>
+            
+            <label for="message">ملاحظات إضافية</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            
+            <button type="submit">إرسال الطلب</button>
+        </form>
+
+        <!-- زر العودة إلى الصفحة الرئيسية -->
+        <button onclick="goHome()" class="home-button">العودة إلى الصفحة الرئيسية</button>
+    </div>
+</body>
+</html>
